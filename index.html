@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
+<html lang="en" data-bs-theme="light">
 
 <head>
     <script src="assets/js/color-modes.js"></script>
@@ -41,10 +41,6 @@
             height: 100vh;
         }
 
-        .bi {
-            vertical-align: -.125em;
-            fill: currentColor;
-        }
 
         .nav-scroller {
             position: relative;
@@ -89,6 +85,7 @@
             display: block !important;
         }
 
+
         .nav-color {
             background-color: #00246B;
         }
@@ -96,15 +93,22 @@
         .bottom {
             margin-bottom: -100px;
         }
+
+        .carousel-caption h1,
+        .carousel-caption p,
+        .carousel-caption {
+            color: #fff !important;
+            /* Ensure text and button colors are light */
+        }
     </style>
 
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
-    
+
 </head>
 
-<body>
+<body data-bs-theme="light">
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top  b-example-divider  fs-5 nav-color">
             <div class="container-fluid">
@@ -145,10 +149,10 @@
             </div>
         </nav>
     </header>
-    <main class="b-example-divider">
+    <main class="b-example-divider" data-bs-theme="light">
 
         <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-            <div class="carousel-indicators">
+            <div class="carousel-indicators color">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -166,7 +170,7 @@
                             <p class="opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
                                 repellendus rem ipsam, quas architecto cum optio aut, provident ullam dignissimos
                                 tempora? Commodi nesciunt quisquam necessitatibus officiis iusto eos laborum! Odio.</p>
-                            <p><a class="btn btn-lg btn-warning fw-bold href=" #">Learn More</a></p>
+                            <a class="btn btn-lg btn-warning fw-bold href=" #">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -201,11 +205,11 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <button class="carousel-control-prev color" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <button class="carousel-control-next color" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -403,7 +407,7 @@
                 </div>
                 <div class="col-lg-4 p-5">
                     <h1>Lorem ipsum</h1>
-                    <p><a class="btn btn-lg btn-warning mt-3 " href=" #">Learn More</a></p>
+                    <p><a class="btn btn-lg btn-warning mt-3 fw-bold" href=" #">Learn More</a></p>
 
                 </div>
                 <div class="col-lg-4 p-5">
